@@ -1,4 +1,4 @@
-#Setting up
+# Setting up
 
 1. In the terminal, type in: `yarn install`
 
