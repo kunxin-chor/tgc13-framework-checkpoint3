@@ -76,7 +76,7 @@ router.get('/:product_id/update', async function(req,res){
     const product = await Product.where({
         'id': productId
     }).fetch({
-        'required': true
+        'require': true
     });
     // let product = await getProductById(req.params.product_id);
 
@@ -124,7 +124,7 @@ router.get('/:product_id/delete', async function(req,res){
     const product = await Product.where({
         'id': req.params.product_id
     }).fetch({
-        'required': true
+        'require': true
     });
 
     res.render('products/delete', {
